@@ -6,13 +6,20 @@ import { Search } from "lucide-react";
 import { navGroups } from "@/lib/nav";
 import { Button } from "@/components/ui/button";
 import {
-  CommandDialog,
+  Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 export function CommandPalette() {
   const [open, setOpen] = useState(false);
@@ -42,29 +49,40 @@ export function CommandPalette() {
           ⌘K
         </kbd>
       </Button>
-      <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput placeholder="Type a page name…" />
-        <CommandList>
-          <CommandEmpty>No results found.</CommandEmpty>
-          {navGroups.map((group) => (
-            <CommandGroup key={group.label} heading={group.label}>
-              {group.items.map((item) => (
-                <CommandItem
-                  key={item.href}
-                  value={`${group.label} ${item.title}`}
-                  onSelect={() => {
-                    setOpen(false);
-                    router.push(item.href);
-                  }}
-                >
-                  {item.icon && <item.icon className="size-4" />}
-                  <span>{item.title}</span>
-                </CommandItem>
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogHeader className="sr-only">
+          <DialogTitle>Command Palette</DialogTitle>
+          <DialogDescription>Search for a page to navigate to.</DialogDescription>
+        </DialogHeader>
+        <DialogContent
+          className="top-1/3 translate-y-0 overflow-hidden rounded-xl! p-0"
+          showCloseButton={false}
+        >
+          <Command>
+            <CommandInput placeholder="Type a page name…" />
+            <CommandList>
+              <CommandEmpty>No results found.</CommandEmpty>
+              {navGroups.map((group) => (
+                <CommandGroup key={group.label} heading={group.label}>
+                  {group.items.map((item) => (
+                    <CommandItem
+                      key={item.href}
+                      value={`${group.label} ${item.title}`}
+                      onSelect={() => {
+                        setOpen(false);
+                        router.push(item.href);
+                      }}
+                    >
+                      {item.icon && <item.icon className="size-4" />}
+                      <span>{item.title}</span>
+                    </CommandItem>
+                  ))}
+                </CommandGroup>
               ))}
-            </CommandGroup>
-          ))}
-        </CommandList>
-      </CommandDialog>
+            </CommandList>
+          </Command>
+        </DialogContent>
+      </Dialog>
     </>
   );
 }
