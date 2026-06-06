@@ -61,7 +61,7 @@ export function ExchangeRatesCard() {
               axisLine={false}
               tickMargin={8}
               tick={{ fontSize: 11 }}
-              tickFormatter={(v: string) => v.replace(/\d+$/, "")}
+              minTickGap={20}
             />
             <YAxis
               tickLine={false}

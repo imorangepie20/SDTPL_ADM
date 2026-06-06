@@ -30,8 +30,11 @@ export default function CryptoPage() {
       </div>
 
       {/* Balance Summary */}
-      <div className="grid gap-4 sm:grid-cols-3">
-        <BalanceSummary />
+      <div className="flex flex-col gap-3">
+        <h2 className="text-base font-semibold tracking-tight">Balance Summary</h2>
+        <div className="grid gap-4 sm:grid-cols-3">
+          <BalanceSummary />
+        </div>
       </div>
     </div>
   );

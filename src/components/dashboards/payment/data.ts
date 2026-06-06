@@ -35,18 +35,18 @@ export const currencyBalances: CurrencyBalance[] = [
 // ─── Exchange Rates (EUR/USD, ~12 data points, 7D view default) ───────────────
 
 export const exchangeRateData: ExchangeRatePoint[] = [
-  { time: "Mon",  rate: 1.074 },
-  { time: "Tue",  rate: 1.078 },
-  { time: "Wed",  rate: 1.071 },
-  { time: "Thu",  rate: 1.083 },
-  { time: "Fri",  rate: 1.086 },
-  { time: "Sat",  rate: 1.080 },
-  { time: "Sun",  rate: 1.084 },
-  { time: "Mon2", rate: 1.090 },
-  { time: "Tue2", rate: 1.088 },
-  { time: "Wed2", rate: 1.092 },
-  { time: "Thu2", rate: 1.095 },
-  { time: "Fri2", rate: 1.091 },
+  { time: "Aug 4",  rate: 1.074 },
+  { time: "Aug 5",  rate: 1.078 },
+  { time: "Aug 6",  rate: 1.071 },
+  { time: "Aug 7",  rate: 1.083 },
+  { time: "Aug 8",  rate: 1.086 },
+  { time: "Aug 9",  rate: 1.080 },
+  { time: "Aug 10", rate: 1.084 },
+  { time: "Aug 11", rate: 1.090 },
+  { time: "Aug 12", rate: 1.088 },
+  { time: "Aug 13", rate: 1.092 },
+  { time: "Aug 14", rate: 1.095 },
+  { time: "Aug 15", rate: 1.091 },
 ];
 
 // ─── Transactions ─────────────────────────────────────────────────────────────
