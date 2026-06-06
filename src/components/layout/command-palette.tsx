@@ -50,14 +50,14 @@ export function CommandPalette() {
         </kbd>
       </Button>
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogHeader className="sr-only">
-          <DialogTitle>Command Palette</DialogTitle>
-          <DialogDescription>Search for a page to navigate to.</DialogDescription>
-        </DialogHeader>
         <DialogContent
           className="top-1/3 translate-y-0 overflow-hidden rounded-xl! p-0"
           showCloseButton={false}
         >
+          <DialogHeader className="sr-only">
+            <DialogTitle>Command Palette</DialogTitle>
+            <DialogDescription>Search for a page to navigate to.</DialogDescription>
+          </DialogHeader>
           <Command>
             <CommandInput placeholder="Type a page name…" />
             <CommandList>
