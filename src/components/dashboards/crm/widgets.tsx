@@ -36,7 +36,7 @@ export function MonthlyTargetCard() {
       <CardContent className="flex flex-col items-center gap-4">
         {/* Circular progress using SVG */}
         <div className="relative flex items-center justify-center">
-          <svg width={120} height={120} className="-rotate-90">
+          <svg width={120} height={120} className="-rotate-90" role="img" aria-label={`Target progress: ${TARGET_PCT}%`}>
             {/* Track */}
             <circle
               cx={60}
@@ -57,7 +57,6 @@ export function MonthlyTargetCard() {
               strokeLinecap="round"
               strokeDasharray={circumference}
               strokeDashoffset={strokeDashoffset}
-              style={{ stroke: "var(--chart-1)" }}
             />
           </svg>
           {/* Center label */}
