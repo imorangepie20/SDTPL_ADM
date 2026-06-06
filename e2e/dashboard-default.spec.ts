@@ -9,10 +9,11 @@ test.describe("Default dashboard", () => {
     await expect(page.getByText("Total Revenue")).toBeVisible();
     await expect(page.getByText("+4850")).toBeVisible();
     await expect(page.getByText("$15,231.89")).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Team Members" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Exercise Minutes" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Latest Payments" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Payment Method" })).toBeVisible();
+    await expect(page.getByText("Team Members", { exact: true })).toBeVisible();
+    await expect(page.getByText("New Message", { exact: true })).toBeVisible();
+    await expect(page.getByText("Exercise Minutes", { exact: true })).toBeVisible();
+    await expect(page.getByText("Latest Payments", { exact: true })).toBeVisible();
+    await expect(page.getByText("Payment Method", { exact: true })).toBeVisible();
     await expect(page.getByRole("button", { name: "Download" })).toBeVisible();
   });
 

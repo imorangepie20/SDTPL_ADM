@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Plus, Send } from "lucide-react";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -20,15 +20,18 @@ export function ChatCard() {
   }
   return (
     <Card className="flex flex-col">
-      <CardHeader className="flex flex-row items-center gap-3 border-b">
-        <Avatar className="size-9"><AvatarFallback>SD</AvatarFallback></Avatar>
-        <div className="flex-1 text-sm">
-          <p className="font-medium leading-none">{chatContact.name}</p>
-          <p className="text-muted-foreground">{chatContact.email}</p>
+      <CardHeader className="border-b">
+        <CardTitle>New Message</CardTitle>
+        <div className="flex flex-row items-center gap-3 pt-3">
+          <Avatar className="size-9"><AvatarFallback>SD</AvatarFallback></Avatar>
+          <div className="flex-1 text-sm">
+            <p className="font-medium leading-none">{chatContact.name}</p>
+            <p className="text-muted-foreground">{chatContact.email}</p>
+          </div>
+          <Button variant="outline" size="icon" className="size-8" aria-label="New message">
+            <Plus className="size-4" />
+          </Button>
         </div>
-        <Button variant="outline" size="icon" className="size-8" aria-label="New message">
-          <Plus className="size-4" />
-        </Button>
       </CardHeader>
       <CardContent className="flex flex-1 flex-col gap-3 py-4">
         {messages.map((m, i) => (

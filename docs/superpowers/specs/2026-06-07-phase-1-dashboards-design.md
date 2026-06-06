@@ -38,7 +38,7 @@
 
 ### 3.1 페이지 헤더
 - 좌측: 페이지 타이틀 **"Dashboard"**
-- 우측: **날짜범위 피커** 버튼(달력 아이콘 + "10 May 2026 - 06 Jun 2026", 클릭 시 `Calendar` range 팝오버) + **"Download"** 버튼(outline, 다운로드 아이콘)
+- 우측: **날짜범위 피커** 버튼(outline, 달력 아이콘 + "10 May 2026 - 06 Jun 2026", 클릭 시 `Calendar` range 팝오버) + **"Download"** 버튼(primary, 다운로드 아이콘 — 캐노니컬 shadcn dashboard-01과 동일)
 
 ### 3.2 본문 그리드
 반응형 그리드: 데스크톱에서 메트릭 카드는 좁은 폭, 나머지는 2~3열 배치. 모바일에서 단일 열로 스택. (`grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4` 기준, 카드별 `col-span` 조정.)
