@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button"
 import {
   Card,
   CardContent,
@@ -195,15 +195,16 @@ export default function ExamplesPage() {
             </CardHeader>
 
             <CardContent>
-              <Button
-                size="sm"
-                variant="outline"
-                className="w-full gap-1.5"
-                render={<Link href={ex.href} />}
+              <Link
+                href={ex.href}
+                className={cn(
+                  buttonVariants({ size: "sm", variant: "outline" }),
+                  "w-full gap-1.5"
+                )}
               >
                 View Example
                 <ArrowRight />
-              </Button>
+              </Link>
             </CardContent>
           </Card>
         ))}

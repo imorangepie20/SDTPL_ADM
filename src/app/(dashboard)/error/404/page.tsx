@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Home, Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function Error404Page() {
   return (
@@ -28,13 +28,16 @@ export default function Error404Page() {
 
       {/* Actions */}
       <div className="flex items-center gap-3">
-        <Button render={<Link href="/dashboard/default" />}>
+        <Link href="/dashboard/default" className={buttonVariants()}>
           <Home className="size-3.5" />
           Go home
-        </Button>
-        <Button variant="outline" render={<Link href="/dashboard/default" />}>
+        </Link>
+        <Link
+          href="/dashboard/default"
+          className={buttonVariants({ variant: "outline" })}
+        >
           Go back
-        </Button>
+        </Link>
       </div>
     </div>
   );
