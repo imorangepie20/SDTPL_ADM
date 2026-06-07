@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Link from "next/link"
 import {
   AppWindowIcon,
   BellIcon,
@@ -282,13 +283,8 @@ function ComponentCard({ entry }: { entry: ComponentEntry }) {
   const LivePreview = LIVE_PREVIEWS[entry.name]
   const IconComp = ICON_MAP[entry.icon]
 
-  return (
-    <div
-      className={cn(
-        "group flex flex-col overflow-hidden rounded-xl bg-card ring-1 ring-foreground/10",
-        "transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:ring-foreground/20"
-      )}
-    >
+  const inner = (
+    <>
       {/* Preview area */}
       <div className="flex h-32 items-center justify-center border-b border-border/60 bg-muted/30 px-4">
         {LivePreview ? (
@@ -314,6 +310,25 @@ function ComponentCard({ entry }: { entry: ComponentEntry }) {
           {entry.category}
         </Badge>
       </div>
+    </>
+  )
+
+  const cardClass = cn(
+    "group flex flex-col overflow-hidden rounded-xl bg-card ring-1 ring-foreground/10",
+    "transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md hover:ring-foreground/20"
+  )
+
+  if (entry.href) {
+    return (
+      <Link href={entry.href} className={cardClass}>
+        {inner}
+      </Link>
+    )
+  }
+
+  return (
+    <div className={cardClass}>
+      {inner}
     </div>
   )
 }

@@ -12,12 +12,13 @@ export interface ComponentEntry {
   category: Exclude<ComponentCategory, "All">
   icon: string
   livePreview?: boolean
+  href?: string
 }
 
 export const COMPONENTS: ComponentEntry[] = [
   { name: "Accordion",        variants: 12, category: "Base",         icon: "ChevronDown" },
   { name: "Alert",            variants: 15, category: "Feedback",     icon: "TriangleAlert" },
-  { name: "Alert Dialog",     variants: 16, category: "Feedback",     icon: "MessageSquareWarning" },
+  { name: "Alert Dialog",     variants: 16, category: "Feedback",     icon: "MessageSquareWarning", href: "/components/alert-dialog" },
   { name: "Autocomplete",     variants:  5, category: "Form",         icon: "TextCursorInput" },
   { name: "Avatar",           variants: 21, category: "Data Display", icon: "CircleUser",         livePreview: true },
   { name: "Badge",            variants: 12, category: "Data Display", icon: "Tag",                livePreview: true },
