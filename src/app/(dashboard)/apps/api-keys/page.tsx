@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { ApiKeysApp } from "@/components/apps/api-keys/api-keys-app";
 
-export default function PAPIKeysPage() {
-  return <PlaceholderPage title="API Keys" />;
+export default function APIKeysPage() {
+  return <ApiKeysApp />;
 }
