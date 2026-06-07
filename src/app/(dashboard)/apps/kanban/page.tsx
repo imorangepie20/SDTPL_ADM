@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { KanbanBoard } from "@/components/apps/kanban/board"
 
-export default function PKanbanPage() {
-  return <PlaceholderPage title="Kanban" />;
+export default function KanbanPage() {
+  return <KanbanBoard />
 }
