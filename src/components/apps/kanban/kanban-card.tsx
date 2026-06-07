@@ -3,12 +3,11 @@
 import React from "react"
 import { useSortable } from "@dnd-kit/sortable"
 import { CSS } from "@dnd-kit/utilities"
-import { MessageSquare, Paperclip, Users } from "lucide-react"
+import { MessageSquare, Paperclip } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarGroup } from "@/components/ui/avatar"
-import { Progress, ProgressTrack, ProgressIndicator } from "@/components/ui/progress"
 import type { Card } from "./data"
 
 const PRIORITY_INITIALS = ["AM", "BK", "CR", "DL"]

@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useCallback, useRef } from "react"
+import React, { useState, useCallback } from "react"
 import {
   DndContext,
   DragOverlay,
@@ -72,9 +72,6 @@ export function KanbanBoard() {
   const [columns, setColumns] = useState<Column[]>(initialColumns)
   const [activeCard, setActiveCard] = useState<Card | null>(null)
   const [activeView, setActiveView] = useState<"board" | "list" | "table">("board")
-
-  // Track the current over column/card during drag for live cross-column moves
-  const overInfo = useRef<{ columnId: string; overId: string } | null>(null)
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
