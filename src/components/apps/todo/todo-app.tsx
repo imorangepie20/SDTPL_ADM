@@ -45,7 +45,7 @@ function formatDue(dateStr: string | null): string | null {
   // handle month overflow minimally (sufficient for seeded data)
   const tomorrowStr = `${y}-${padded(m)}-${padded(tomorrowDay)}`
   if (dateStr === tomorrowStr) return "Tomorrow"
-  const [dy, dm, dd] = dateStr.split("-").map(Number)
+  const [, dm, dd] = dateStr.split("-").map(Number)
   const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
   return `${months[dm - 1]} ${dd}`
 }

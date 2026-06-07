@@ -290,7 +290,7 @@ const columns: ColumnDef<Task>[] = [
   {
     id: "actions",
     enableHiding: false,
-    cell: ({ row }) => (
+    cell: () => (
       <DropdownMenu>
         <DropdownMenuTrigger
           render={
