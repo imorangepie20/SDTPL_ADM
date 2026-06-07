@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { POSApp } from "@/components/apps/pos/pos-app"
 
-export default function PPOSPage() {
-  return <PlaceholderPage title="POS" />;
+export default function POSPage() {
+  return <POSApp />
 }
