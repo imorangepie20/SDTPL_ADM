@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { PricingPage } from "@/components/pages/pricing/pricing-page";
 
 export default function PPricingPage() {
-  return <PlaceholderPage title="Pricing" />;
+  return <PricingPage />;
 }
