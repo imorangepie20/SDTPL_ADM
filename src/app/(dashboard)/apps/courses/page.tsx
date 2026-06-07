@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { CoursesApp } from "@/components/apps/courses/courses-app";
 
-export default function PCoursesPage() {
-  return <PlaceholderPage title="Courses" />;
+export default function CoursesPage() {
+  return <CoursesApp />;
 }
