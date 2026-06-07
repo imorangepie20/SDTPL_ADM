@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { NotificationsPage } from "@/components/pages/notifications/notifications-page";
 
 export default function PNotificationsPage() {
-  return <PlaceholderPage title="Notifications" />;
+  return <NotificationsPage />;
 }
