@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { AiChatV2 } from "@/components/apps/ai-chat/ai-chat-v2"
 
 export default function PAIChatV2Page() {
-  return <PlaceholderPage title="AI Chat V2" />;
+  return <AiChatV2 />
 }
