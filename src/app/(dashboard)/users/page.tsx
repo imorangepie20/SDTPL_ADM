@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { UsersPage } from "@/components/pages/users/users-page";
 
 export default function PUsersListPage() {
-  return <PlaceholderPage title="Users List" />;
+  return <UsersPage />;
 }
