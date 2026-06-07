@@ -1,5 +1,9 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { CalendarApp } from "@/components/apps/calendar/calendar-app";
 
-export default function PCalendarPage() {
-  return <PlaceholderPage title="Calendar" />;
+export default function CalendarPage() {
+  return (
+    <div className="flex h-[calc(100vh-3.5rem)] flex-col overflow-hidden">
+      <CalendarApp />
+    </div>
+  );
 }
