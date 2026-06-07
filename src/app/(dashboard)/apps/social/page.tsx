@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { SocialApp } from "@/components/apps/social/social-app"
 
-export default function PSocialMediaPage() {
-  return <PlaceholderPage title="Social Media" />;
+export default function SocialMediaPage() {
+  return <SocialApp />
 }
