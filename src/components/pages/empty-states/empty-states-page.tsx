@@ -6,13 +6,7 @@ import {
   FileX,
   Bell,
 } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 // ─── Single Empty State Card ─────────────────────────────────────────────────

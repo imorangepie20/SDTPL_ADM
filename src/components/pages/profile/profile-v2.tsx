@@ -64,7 +64,7 @@ function ProfileSidebarCard() {
               { label: "Posts", value: profile.posts },
               { label: "Followers", value: profile.followers.toLocaleString() },
               { label: "Following", value: profile.following },
-            ].map((s, i) => (
+            ].map((s) => (
               <div key={s.label} className="flex flex-col items-center gap-0.5">
                 <span className="text-base font-bold tabular-nums">{s.value}</span>
                 <span className="text-[10px] text-muted-foreground">{s.label}</span>

@@ -2,12 +2,10 @@
 
 import { LayoutDashboard, Zap, GitBranch, Users, Heart, MessageSquare } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Progress } from "@/components/ui/progress";
-import { activityItems, projects, connections, skills, profile } from "./data";
+import { activityItems, projects, skills, profile } from "./data";
 
 // ─── Overview Tab ─────────────────────────────────────────────────────────
 
