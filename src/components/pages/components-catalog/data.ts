@@ -1,0 +1,74 @@
+export type ComponentCategory =
+  | "All"
+  | "Base"
+  | "Data Display"
+  | "Navigation"
+  | "Form"
+  | "Feedback"
+
+export interface ComponentEntry {
+  name: string
+  variants: number
+  category: Exclude<ComponentCategory, "All">
+  icon: string
+  livePreview?: boolean
+}
+
+export const COMPONENTS: ComponentEntry[] = [
+  { name: "Accordion",        variants: 12, category: "Base",         icon: "ChevronDown" },
+  { name: "Alert",            variants: 15, category: "Feedback",     icon: "TriangleAlert" },
+  { name: "Alert Dialog",     variants: 16, category: "Feedback",     icon: "MessageSquareWarning" },
+  { name: "Autocomplete",     variants:  5, category: "Form",         icon: "TextCursorInput" },
+  { name: "Avatar",           variants: 21, category: "Data Display", icon: "CircleUser",         livePreview: true },
+  { name: "Badge",            variants: 12, category: "Data Display", icon: "Tag",                livePreview: true },
+  { name: "Breadcrumb",       variants:  6, category: "Navigation",   icon: "ChevronRight" },
+  { name: "Button",           variants: 27, category: "Form",         icon: "MousePointerClick",  livePreview: true },
+  { name: "Button Group",     variants: 20, category: "Form",         icon: "Group" },
+  { name: "Calendar",         variants: 15, category: "Form",         icon: "Calendar" },
+  { name: "Card",             variants:  8, category: "Base",         icon: "Square",             livePreview: true },
+  { name: "Carousel",         variants: 12, category: "Data Display", icon: "GalleryHorizontal" },
+  { name: "Checkbox",         variants: 13, category: "Form",         icon: "CheckSquare",        livePreview: true },
+  { name: "Collapsible",      variants:  8, category: "Base",         icon: "ChevronsUpDown" },
+  { name: "Combobox",         variants: 12, category: "Form",         icon: "ListFilter" },
+  { name: "Command",          variants:  9, category: "Navigation",   icon: "Command" },
+  { name: "Context Menu",     variants:  1, category: "Navigation",   icon: "MousePointer2" },
+  { name: "Data Table",       variants:  6, category: "Data Display", icon: "Table2" },
+  { name: "Dialog",           variants: 16, category: "Base",         icon: "AppWindow" },
+  { name: "Drawer",           variants:  6, category: "Base",         icon: "PanelBottom" },
+  { name: "Dropdown Menu",    variants: 12, category: "Navigation",   icon: "ChevronDown" },
+  { name: "Empty",            variants:  8, category: "Data Display", icon: "Inbox" },
+  { name: "Field",            variants: 10, category: "Form",         icon: "FormInput" },
+  { name: "Hover Card",       variants:  3, category: "Base",         icon: "SquareMousePointer" },
+  { name: "Input",            variants: 25, category: "Form",         icon: "TextCursorInput",    livePreview: true },
+  { name: "Item",             variants: 10, category: "Data Display", icon: "List" },
+  { name: "Menubar",          variants:  1, category: "Navigation",   icon: "Menu" },
+  { name: "Native Select",    variants:  9, category: "Form",         icon: "ChevronDown" },
+  { name: "Navigation Menu",  variants:  4, category: "Navigation",   icon: "Navigation" },
+  { name: "Pagination",       variants: 12, category: "Navigation",   icon: "Ellipsis" },
+  { name: "Popover",          variants:  6, category: "Base",         icon: "MessageSquare" },
+  { name: "Progress",         variants: 10, category: "Data Display", icon: "LoaderCircle",       livePreview: true },
+  { name: "Radio Group",      variants: 15, category: "Form",         icon: "CircleDot" },
+  { name: "Scroll Area",      variants:  6, category: "Base",         icon: "ScrollText" },
+  { name: "Select",           variants: 15, category: "Form",         icon: "ChevronsUpDown",     livePreview: true },
+  { name: "Separator",        variants: 16, category: "Base",         icon: "Minus",              livePreview: true },
+  { name: "Sheet",            variants:  8, category: "Base",         icon: "PanelRight" },
+  { name: "Skeleton",         variants:  7, category: "Base",         icon: "Loader",             livePreview: true },
+  { name: "Slider",           variants: 13, category: "Form",         icon: "SlidersHorizontal",  livePreview: true },
+  { name: "Sonner Toast",     variants: 12, category: "Feedback",     icon: "Bell" },
+  { name: "Spinner",          variants: 14, category: "Feedback",     icon: "LoaderCircle" },
+  { name: "Switch",           variants: 10, category: "Form",         icon: "ToggleRight",        livePreview: true },
+  { name: "Table",            variants: 12, category: "Data Display", icon: "Table" },
+  { name: "Tabs",             variants: 15, category: "Navigation",   icon: "LayoutPanelTop",     livePreview: true },
+  { name: "Textarea",         variants: 11, category: "Form",         icon: "FileText" },
+  { name: "Toggle",           variants:  7, category: "Form",         icon: "ToggleLeft" },
+  { name: "Tooltip",          variants:  8, category: "Base",         icon: "MessageCircle",      livePreview: true },
+]
+
+export const CATEGORIES: ComponentCategory[] = [
+  "All",
+  "Base",
+  "Data Display",
+  "Navigation",
+  "Form",
+  "Feedback",
+]
