@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { FileManagerApp } from "@/components/apps/file-manager/file-manager-app"
 
-export default function PFileManagerPage() {
-  return <PlaceholderPage title="File Manager" />;
+export default function FileManagerPage() {
+  return <FileManagerApp />
 }
