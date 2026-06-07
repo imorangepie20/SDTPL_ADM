@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { NotesApp } from "@/components/apps/notes/notes-app"
 
-export default function PNotesPage() {
-  return <PlaceholderPage title="Notes" />;
+export default function NotesPage() {
+  return <NotesApp />
 }
