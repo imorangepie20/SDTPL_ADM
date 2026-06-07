@@ -10,13 +10,27 @@ function noErrors(page: import("@playwright/test").Page) {
 
 // ─── Render smokes ────────────────────────────────────────────────────────────
 
-test("/components renders Buttons section", async ({ page }) => {
+test("/components renders the catalog header and cards", async ({ page }) => {
   const errors = noErrors(page);
   const res = await page.goto("/components");
   expect(res?.status(), "status /components").toBeLessThan(400);
-  // CardTitle "Buttons" is the first section heading in the showcase
-  await expect(page.getByText("Buttons", { exact: true }).first()).toBeVisible();
+  await expect(page.getByText("500+ Free Components for Shadcn UI")).toBeVisible();
+  await expect(page.getByText("Avatar", { exact: true }).first()).toBeVisible();
+  await expect(page.getByText("Accordion", { exact: true }).first()).toBeVisible();
   expect(errors, "pageerrors /components").toEqual([]);
+});
+
+test("/components search + category filter", async ({ page }) => {
+  await page.goto("/components");
+  const search = page.getByPlaceholder("Search components…");
+  await search.fill("accordion");
+  await expect(page.getByText("Accordion", { exact: true }).first()).toBeVisible();
+  await expect(page.getByText("Avatar", { exact: true })).toHaveCount(0);
+  await search.fill("");
+  // Form category shows Slider (Form), hides Avatar (Data Display)
+  await page.getByRole("button", { name: /^Form\b/ }).click();
+  await expect(page.getByText("Slider", { exact: true }).first()).toBeVisible();
+  await expect(page.getByText("Avatar", { exact: true })).toHaveCount(0);
 });
 
 test("/widgets renders Quick Actions widget", async ({ page }) => {
