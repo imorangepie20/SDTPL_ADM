@@ -1,5 +1,9 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { ProfileV1 } from "@/components/pages/profile/profile-v1";
 
-export default function PProfileV1Page() {
-  return <PlaceholderPage title="Profile V1" />;
+export default function ProfileV1Page() {
+  return (
+    <div className="flex flex-col gap-6 p-6">
+      <ProfileV1 />
+    </div>
+  );
 }
