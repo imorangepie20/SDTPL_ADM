@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { MailApp } from "@/components/apps/mail/mail-app"
 
-export default function PMailPage() {
-  return <PlaceholderPage title="Mail" />;
+export default function MailPage() {
+  return <MailApp />
 }
