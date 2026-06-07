@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { TodoApp } from "@/components/apps/todo/todo-app"
 
-export default function PTodoListPage() {
-  return <PlaceholderPage title="Todo List" />;
+export default function TodoListPage() {
+  return <TodoApp />
 }
