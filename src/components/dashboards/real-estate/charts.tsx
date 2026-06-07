@@ -58,7 +58,7 @@ export function RevenueVisitCard() {
       <CardHeader>
         <div className="flex items-start justify-between gap-4">
           <CardTitle>Revenue / Visit</CardTitle>
-          <Tabs value={period} onValueChange={(v) => setPeriod(v as RevPeriod)}>
+          <Tabs value={period} onValueChange={(v) => { if (v != null) setPeriod(v as RevPeriod); }}>
             <TabsList>
               {(["W", "M", "Y"] as RevPeriod[]).map((p) => (
                 <TabsTrigger key={p} value={p}>

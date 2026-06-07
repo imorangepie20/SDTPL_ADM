@@ -62,7 +62,7 @@ export function BookingsCard() {
           </div>
           <Tabs
             value={period}
-            onValueChange={(v) => setPeriod(v as Period)}
+            onValueChange={(v) => { if (v != null) setPeriod(v as Period); }}
           >
             <TabsList>
               {(["D", "W", "M", "Y"] as Period[]).map((p) => (
