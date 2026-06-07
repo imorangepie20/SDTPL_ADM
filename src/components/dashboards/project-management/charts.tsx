@@ -49,6 +49,11 @@ const overviewDataMap: Record<OverviewPeriod, typeof projectsOverview3Months> =
 export function ProjectsOverviewCard() {
   const [period, setPeriod] = useState<OverviewPeriod>("3months");
   const data = overviewDataMap[period];
+  const description = {
+    "3months": "Total for the last 3 months",
+    "30days": "Total for the last 30 days",
+    "7days": "Total for the last 7 days",
+  }[period];
 
   return (
     <Card>
@@ -56,7 +61,7 @@ export function ProjectsOverviewCard() {
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
             <CardTitle>Projects Overview</CardTitle>
-            <CardDescription>Total for the last 3 months</CardDescription>
+            <CardDescription>{description}</CardDescription>
           </div>
           <Tabs
             value={period}

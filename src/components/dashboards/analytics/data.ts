@@ -67,6 +67,6 @@ export const campaignStats: CampaignRow[] = [
   { metric: "Opened",      count: "6,043", change: "+2.1%", positive: true  },
   { metric: "Clicked",     count: "600",   change: "-2.1%", positive: false },
   { metric: "Subscribe",   count: "490",   change: "+8.5%", positive: true  },
-  { metric: "Complaints",  count: "490",   change: "+4.5%", positive: true  },
+  { metric: "Complaints",  count: "490",   change: "+4.5%", positive: false },
   { metric: "Unsubscribe", count: "1,200", change: "-0.5%", positive: false },
 ];

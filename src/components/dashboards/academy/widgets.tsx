@@ -15,6 +15,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { KpiCard } from "@/components/dashboards/shared/kpi-card";
 import { leaderboard, popularCourses } from "./data";
 
 // ─── Greeting Banner ─────────────────────────────────────────────────────────
@@ -91,17 +92,13 @@ export function LeaderboardCard() {
 
 export function SuccessRateCard() {
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>Success Rate</CardTitle>
-      </CardHeader>
-      <CardContent className="flex flex-col gap-2">
-        <p className="text-4xl font-bold tabular-nums">88%</p>
-        <p className="text-sm text-muted-foreground">
-          3% increase · target 100%
-        </p>
-      </CardContent>
-    </Card>
+    <KpiCard
+      label="Success Rate"
+      value="88%"
+      delta="+3%"
+      trend="up"
+      sublabel="· target 100%"
+    />
   );
 }
 
