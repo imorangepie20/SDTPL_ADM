@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/placeholder-page";
+import { ChatsApp } from "@/components/apps/chats/chats-app"
 
-export default function PChatsPage() {
-  return <PlaceholderPage title="Chats" />;
+export default function ChatsPage() {
+  return <ChatsApp />
 }
