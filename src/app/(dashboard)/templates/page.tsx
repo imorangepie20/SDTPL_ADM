@@ -94,7 +94,6 @@ function TemplatePreview({
   from,
   to,
   accentColor,
-  title,
 }: {
   from: string
   to: string
