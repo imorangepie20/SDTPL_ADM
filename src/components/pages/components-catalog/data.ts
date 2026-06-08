@@ -52,7 +52,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Scroll Area",      variants:  6, category: "Base",         icon: "ScrollText",         href: "/components/scroll-area" },
   { name: "Select",           variants: 15, category: "Form",         icon: "ChevronsUpDown",     livePreview: true, href: "/components/select" },
   { name: "Separator",        variants: 16, category: "Base",         icon: "Minus",              livePreview: true, href: "/components/separator" },
-  { name: "Sheet",            variants:  8, category: "Base",         icon: "PanelRight" },
+  { name: "Sheet",            variants:  8, category: "Base",         icon: "PanelRight",         href: "/components/sheet" },
   { name: "Skeleton",         variants:  7, category: "Base",         icon: "Loader",             livePreview: true },
   { name: "Slider",           variants: 13, category: "Form",         icon: "SlidersHorizontal",  livePreview: true },
   { name: "Sonner Toast",     variants: 12, category: "Feedback",     icon: "Bell" },
