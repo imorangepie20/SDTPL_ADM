@@ -31,7 +31,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Checkbox",         variants: 13, category: "Form",         icon: "CheckSquare",        livePreview: true, href: "/components/checkbox" },
   { name: "Collapsible",      variants:  8, category: "Base",         icon: "ChevronsUpDown",       href: "/components/collapsible" },
   { name: "Combobox",         variants: 12, category: "Form",         icon: "ListFilter",         href: "/components/combobox" },
-  { name: "Command",          variants:  9, category: "Navigation",   icon: "Command" },
+  { name: "Command",          variants:  9, category: "Navigation",   icon: "Command",            href: "/components/command" },
   { name: "Context Menu",     variants:  1, category: "Navigation",   icon: "MousePointer2" },
   { name: "Data Table",       variants:  6, category: "Data Display", icon: "Table2" },
   { name: "Dialog",           variants: 16, category: "Base",         icon: "AppWindow" },
