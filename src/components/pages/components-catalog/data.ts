@@ -49,7 +49,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Popover",          variants:  6, category: "Base",         icon: "MessageSquare",      href: "/components/popover" },
   { name: "Progress",         variants: 10, category: "Data Display", icon: "LoaderCircle",       livePreview: true, href: "/components/progress" },
   { name: "Radio Group",      variants: 15, category: "Form",         icon: "CircleDot",          href: "/components/radio-group" },
-  { name: "Scroll Area",      variants:  6, category: "Base",         icon: "ScrollText" },
+  { name: "Scroll Area",      variants:  6, category: "Base",         icon: "ScrollText",         href: "/components/scroll-area" },
   { name: "Select",           variants: 15, category: "Form",         icon: "ChevronsUpDown",     livePreview: true },
   { name: "Separator",        variants: 16, category: "Base",         icon: "Minus",              livePreview: true },
   { name: "Sheet",            variants:  8, category: "Base",         icon: "PanelRight" },
