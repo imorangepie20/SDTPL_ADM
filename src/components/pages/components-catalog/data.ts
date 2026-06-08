@@ -60,7 +60,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Switch",           variants: 10, category: "Form",         icon: "ToggleRight",        livePreview: true, href: "/components/switch" },
   { name: "Table",            variants: 12, category: "Data Display", icon: "Table",              href: "/components/table" },
   { name: "Tabs",             variants: 15, category: "Navigation",   icon: "LayoutPanelTop",     livePreview: true, href: "/components/tabs" },
-  { name: "Textarea",         variants: 11, category: "Form",         icon: "FileText" },
+  { name: "Textarea",         variants: 11, category: "Form",         icon: "FileText",           href: "/components/textarea" },
   { name: "Toggle",           variants:  7, category: "Form",         icon: "ToggleLeft" },
   { name: "Tooltip",          variants:  8, category: "Base",         icon: "MessageCircle",      livePreview: true },
 ]
