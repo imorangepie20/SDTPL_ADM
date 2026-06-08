@@ -57,11 +57,15 @@ function DropdownMenuLabel({
   className,
   inset,
   ...props
-}: MenuPrimitive.GroupLabel.Props & {
+}: React.ComponentProps<"div"> & {
   inset?: boolean
 }) {
+  // Standalone label (plain div) so it works outside a <DropdownMenuGroup>.
+  // Base UI's Menu.GroupLabel requires a MenuGroupContext and throws if used
+  // directly inside a menu popup without a wrapping group. (Re-applied after a
+  // `shadcn add` reverted it — see project memory gotcha.)
   return (
-    <MenuPrimitive.GroupLabel
+    <div
       data-slot="dropdown-menu-label"
       data-inset={inset}
       className={cn(
