@@ -38,7 +38,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Drawer",           variants:  6, category: "Base",         icon: "PanelBottom",        href: "/components/drawer" },
   { name: "Dropdown Menu",    variants: 12, category: "Navigation",   icon: "ChevronDown",        href: "/components/dropdown-menu" },
   { name: "Empty",            variants:  8, category: "Data Display", icon: "Inbox",              href: "/components/empty" },
-  { name: "Field",            variants: 10, category: "Form",         icon: "FormInput" },
+  { name: "Field",            variants: 10, category: "Form",         icon: "FormInput",          href: "/components/field" },
   { name: "Hover Card",       variants:  3, category: "Base",         icon: "SquareMousePointer" },
   { name: "Input",            variants: 25, category: "Form",         icon: "TextCursorInput",    livePreview: true },
   { name: "Item",             variants: 10, category: "Data Display", icon: "List" },
