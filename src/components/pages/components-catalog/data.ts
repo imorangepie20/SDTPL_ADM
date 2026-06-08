@@ -46,7 +46,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Native Select",    variants:  9, category: "Form",         icon: "ChevronDown",            href: "/components/native-select" },
   { name: "Navigation Menu",  variants:  4, category: "Navigation",   icon: "Navigation",             href: "/components/navigation-menu" },
   { name: "Pagination",       variants: 12, category: "Navigation",   icon: "Ellipsis",             href: "/components/pagination" },
-  { name: "Popover",          variants:  6, category: "Base",         icon: "MessageSquare" },
+  { name: "Popover",          variants:  6, category: "Base",         icon: "MessageSquare",      href: "/components/popover" },
   { name: "Progress",         variants: 10, category: "Data Display", icon: "LoaderCircle",       livePreview: true },
   { name: "Radio Group",      variants: 15, category: "Form",         icon: "CircleDot" },
   { name: "Scroll Area",      variants:  6, category: "Base",         icon: "ScrollText" },
