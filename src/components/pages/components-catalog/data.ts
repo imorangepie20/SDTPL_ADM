@@ -17,7 +17,7 @@ export interface ComponentEntry {
 
 export const COMPONENTS: ComponentEntry[] = [
   { name: "Accordion",        variants: 12, category: "Base",         icon: "ChevronDown",            href: "/components/accordion" },
-  { name: "Alert",            variants: 15, category: "Feedback",     icon: "TriangleAlert" },
+  { name: "Alert",            variants: 15, category: "Feedback",     icon: "TriangleAlert",        href: "/components/alert" },
   { name: "Alert Dialog",     variants: 16, category: "Feedback",     icon: "MessageSquareWarning", href: "/components/alert-dialog" },
   { name: "Autocomplete",     variants:  5, category: "Form",         icon: "TextCursorInput" },
   { name: "Avatar",           variants: 21, category: "Data Display", icon: "CircleUser",         livePreview: true },
