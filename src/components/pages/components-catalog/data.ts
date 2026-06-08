@@ -54,7 +54,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Separator",        variants: 16, category: "Base",         icon: "Minus",              livePreview: true, href: "/components/separator" },
   { name: "Sheet",            variants:  8, category: "Base",         icon: "PanelRight",         href: "/components/sheet" },
   { name: "Skeleton",         variants:  7, category: "Base",         icon: "Loader",             livePreview: true, href: "/components/skeleton" },
-  { name: "Slider",           variants: 13, category: "Form",         icon: "SlidersHorizontal",  livePreview: true },
+  { name: "Slider",           variants: 13, category: "Form",         icon: "SlidersHorizontal",  livePreview: true, href: "/components/slider" },
   { name: "Sonner Toast",     variants: 12, category: "Feedback",     icon: "Bell" },
   { name: "Spinner",          variants: 14, category: "Feedback",     icon: "LoaderCircle" },
   { name: "Switch",           variants: 10, category: "Form",         icon: "ToggleRight",        livePreview: true },
