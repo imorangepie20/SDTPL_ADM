@@ -26,7 +26,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Button",           variants: 27, category: "Form",         icon: "MousePointerClick",  livePreview: true, href: "/components/button" },
   { name: "Button Group",     variants: 20, category: "Form",         icon: "Group",              href: "/components/button-group" },
   { name: "Calendar",         variants: 15, category: "Form",         icon: "Calendar",           href: "/components/calendar" },
-  { name: "Card",             variants:  8, category: "Base",         icon: "Square",             livePreview: true },
+  { name: "Card",             variants:  8, category: "Base",         icon: "Square",             livePreview: true, href: "/components/card" },
   { name: "Carousel",         variants: 12, category: "Data Display", icon: "GalleryHorizontal" },
   { name: "Checkbox",         variants: 13, category: "Form",         icon: "CheckSquare",        livePreview: true },
   { name: "Collapsible",      variants:  8, category: "Base",         icon: "ChevronsUpDown" },
