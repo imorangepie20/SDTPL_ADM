@@ -35,7 +35,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Context Menu",     variants:  1, category: "Navigation",   icon: "MousePointer2", href: "/components/context-menu" },
   { name: "Data Table",       variants:  6, category: "Data Display", icon: "Table2",              href: "/components/data-table" },
   { name: "Dialog",           variants: 16, category: "Base",         icon: "AppWindow",          href: "/components/dialog" },
-  { name: "Drawer",           variants:  6, category: "Base",         icon: "PanelBottom" },
+  { name: "Drawer",           variants:  6, category: "Base",         icon: "PanelBottom",        href: "/components/drawer" },
   { name: "Dropdown Menu",    variants: 12, category: "Navigation",   icon: "ChevronDown" },
   { name: "Empty",            variants:  8, category: "Data Display", icon: "Inbox" },
   { name: "Field",            variants: 10, category: "Form",         icon: "FormInput" },
