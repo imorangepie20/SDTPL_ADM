@@ -57,7 +57,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Slider",           variants: 13, category: "Form",         icon: "SlidersHorizontal",  livePreview: true, href: "/components/slider" },
   { name: "Sonner Toast",     variants: 12, category: "Feedback",     icon: "Bell",               href: "/components/sonner-toast" },
   { name: "Spinner",          variants: 14, category: "Feedback",     icon: "LoaderCircle",       href: "/components/spinner" },
-  { name: "Switch",           variants: 10, category: "Form",         icon: "ToggleRight",        livePreview: true },
+  { name: "Switch",           variants: 10, category: "Form",         icon: "ToggleRight",        livePreview: true, href: "/components/switch" },
   { name: "Table",            variants: 12, category: "Data Display", icon: "Table" },
   { name: "Tabs",             variants: 15, category: "Navigation",   icon: "LayoutPanelTop",     livePreview: true },
   { name: "Textarea",         variants: 11, category: "Form",         icon: "FileText" },
