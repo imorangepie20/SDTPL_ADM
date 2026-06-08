@@ -29,7 +29,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Card",             variants:  8, category: "Base",         icon: "Square",             livePreview: true, href: "/components/card" },
   { name: "Carousel",         variants: 12, category: "Data Display", icon: "GalleryHorizontal", href: "/components/carousel" },
   { name: "Checkbox",         variants: 13, category: "Form",         icon: "CheckSquare",        livePreview: true, href: "/components/checkbox" },
-  { name: "Collapsible",      variants:  8, category: "Base",         icon: "ChevronsUpDown" },
+  { name: "Collapsible",      variants:  8, category: "Base",         icon: "ChevronsUpDown",       href: "/components/collapsible" },
   { name: "Combobox",         variants: 12, category: "Form",         icon: "ListFilter" },
   { name: "Command",          variants:  9, category: "Navigation",   icon: "Command" },
   { name: "Context Menu",     variants:  1, category: "Navigation",   icon: "MousePointer2" },
