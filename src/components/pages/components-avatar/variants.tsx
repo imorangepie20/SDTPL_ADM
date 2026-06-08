@@ -247,11 +247,17 @@ export function DropdownMenuVariant() {
     <DropdownMenu>
       <DropdownMenuTrigger
         render={
-          <Avatar className="cursor-pointer" aria-label="Open user menu">
-            <AvatarFallback className="bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300">
-              JD
-            </AvatarFallback>
-          </Avatar>
+          <Button
+            variant="ghost"
+            aria-label="Open user menu"
+            className="h-auto rounded-full p-0"
+          >
+            <Avatar className="cursor-pointer">
+              <AvatarFallback className="bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300">
+                JD
+              </AvatarFallback>
+            </Avatar>
+          </Button>
         }
       />
       <DropdownMenuContent align="end">
@@ -285,11 +291,17 @@ export function WithPopoverVariant() {
     <Popover>
       <PopoverTrigger
         render={
-          <Avatar className="cursor-pointer" aria-label="Open profile card">
-            <AvatarFallback className="bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-300">
-              EG
-            </AvatarFallback>
-          </Avatar>
+          <Button
+            variant="ghost"
+            aria-label="Open profile card"
+            className="h-auto rounded-full p-0"
+          >
+            <Avatar className="cursor-pointer">
+              <AvatarFallback className="bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-300">
+                EG
+              </AvatarFallback>
+            </Avatar>
+          </Button>
         }
       />
       <PopoverContent className="w-64">

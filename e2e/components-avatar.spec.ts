@@ -19,10 +19,7 @@ test.describe("Components — Avatar detail", () => {
 
   test("Dropdown menu variant — clicking avatar trigger shows menu items", async ({ page }) => {
     await page.goto("/components/avatar");
-    // The dropdown avatar has aria-label="Open user menu"
-    await page.getByRole("img", { name: "Open user menu" }).first().click().catch(() =>
-      page.getByLabel("Open user menu").first().click()
-    );
+    await page.getByRole("button", { name: "Open user menu" }).click();
     // The menu should reveal "Log out"
     await expect(page.getByRole("menuitem", { name: /log out/i }).first()).toBeVisible();
   });
