@@ -42,7 +42,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Hover Card",       variants:  3, category: "Base",         icon: "SquareMousePointer", href: "/components/hover-card" },
   { name: "Input",            variants: 25, category: "Form",         icon: "TextCursorInput",    livePreview: true, href: "/components/input" },
   { name: "Item",             variants: 10, category: "Data Display", icon: "List",               href: "/components/item" },
-  { name: "Menubar",          variants:  1, category: "Navigation",   icon: "Menu" },
+  { name: "Menubar",          variants:  1, category: "Navigation",   icon: "Menu",               href: "/components/menubar" },
   { name: "Native Select",    variants:  9, category: "Form",         icon: "ChevronDown" },
   { name: "Navigation Menu",  variants:  4, category: "Navigation",   icon: "Navigation" },
   { name: "Pagination",       variants: 12, category: "Navigation",   icon: "Ellipsis" },
