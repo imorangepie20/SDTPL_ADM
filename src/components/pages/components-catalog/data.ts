@@ -43,7 +43,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Input",            variants: 25, category: "Form",         icon: "TextCursorInput",    livePreview: true, href: "/components/input" },
   { name: "Item",             variants: 10, category: "Data Display", icon: "List",               href: "/components/item" },
   { name: "Menubar",          variants:  1, category: "Navigation",   icon: "Menu",               href: "/components/menubar" },
-  { name: "Native Select",    variants:  9, category: "Form",         icon: "ChevronDown" },
+  { name: "Native Select",    variants:  9, category: "Form",         icon: "ChevronDown",            href: "/components/native-select" },
   { name: "Navigation Menu",  variants:  4, category: "Navigation",   icon: "Navigation" },
   { name: "Pagination",       variants: 12, category: "Navigation",   icon: "Ellipsis" },
   { name: "Popover",          variants:  6, category: "Base",         icon: "MessageSquare" },
