@@ -22,7 +22,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Autocomplete",     variants:  5, category: "Form",         icon: "TextCursorInput",    href: "/components/autocomplete" },
   { name: "Avatar",           variants: 21, category: "Data Display", icon: "CircleUser",         livePreview: true, href: "/components/avatar" },
   { name: "Badge",            variants: 12, category: "Data Display", icon: "Tag",                livePreview: true, href: "/components/badge" },
-  { name: "Breadcrumb",       variants:  6, category: "Navigation",   icon: "ChevronRight" },
+  { name: "Breadcrumb",       variants:  6, category: "Navigation",   icon: "ChevronRight",       href: "/components/breadcrumb" },
   { name: "Button",           variants: 27, category: "Form",         icon: "MousePointerClick",  livePreview: true },
   { name: "Button Group",     variants: 20, category: "Form",         icon: "Group" },
   { name: "Calendar",         variants: 15, category: "Form",         icon: "Calendar" },
