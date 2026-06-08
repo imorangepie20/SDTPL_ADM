@@ -133,13 +133,15 @@ export function DotsNavigationVariant() {
 
 // ─── 4. Autoplay + loop ───────────────────────────────────────────────────────
 export function AutoplayLoopVariant() {
-  const plugin = React.useRef(Autoplay({ delay: 2500, stopOnInteraction: false }))
+  const [plugin] = React.useState(() =>
+    Autoplay({ delay: 2500, stopOnInteraction: false })
+  )
 
   return (
     <div className="max-w-sm mx-auto px-10">
       <Carousel
         opts={{ loop: true }}
-        plugins={[plugin.current]}
+        plugins={[plugin]}
       >
         <CarouselContent>
           {GRADIENTS.map((g, i) => (
