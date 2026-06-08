@@ -20,12 +20,14 @@ import { cn } from "@/lib/utils"
 
 // ─── Shared fruit data ────────────────────────────────────────────────────────
 
+// Base UI's SelectValue renders the selected item's VALUE (not its child text),
+// so use value === label for these demo selects to display proper labels.
 const FRUITS = [
-  { value: "apple", label: "Apple" },
-  { value: "banana", label: "Banana" },
-  { value: "blueberry", label: "Blueberry" },
-  { value: "grapes", label: "Grapes" },
-  { value: "pineapple", label: "Pineapple" },
+  { value: "Apple", label: "Apple" },
+  { value: "Banana", label: "Banana" },
+  { value: "Blueberry", label: "Blueberry" },
+  { value: "Grapes", label: "Grapes" },
+  { value: "Pineapple", label: "Pineapple" },
 ]
 
 // ─── 1. Default ───────────────────────────────────────────────────────────────
@@ -192,10 +194,10 @@ export function OptionGroupsVariant() {
 
 // ─── 7. Status ────────────────────────────────────────────────────────────────
 const STATUSES = [
-  { value: "active", label: "Active", dotClass: "bg-green-500" },
-  { value: "away", label: "Away", dotClass: "bg-amber-500" },
-  { value: "busy", label: "Busy", dotClass: "bg-red-500" },
-  { value: "offline", label: "Offline", dotClass: "bg-gray-400" },
+  { value: "Active", label: "Active", dotClass: "bg-green-500" },
+  { value: "Away", label: "Away", dotClass: "bg-amber-500" },
+  { value: "Busy", label: "Busy", dotClass: "bg-red-500" },
+  { value: "Offline", label: "Offline", dotClass: "bg-gray-400" },
 ]
 
 export function StatusVariant() {
@@ -231,11 +233,11 @@ export function StatusVariant() {
 
 // ─── 8. Items with icons ──────────────────────────────────────────────────────
 const ICON_FRUITS = [
-  { value: "apple", label: "Apple", icon: Apple },
-  { value: "banana", label: "Banana", icon: Circle },
-  { value: "blueberry", label: "Blueberry", icon: Circle },
-  { value: "grapes", label: "Grapes", icon: Circle },
-  { value: "carrot", label: "Carrot", icon: Carrot },
+  { value: "Apple", label: "Apple", icon: Apple },
+  { value: "Banana", label: "Banana", icon: Circle },
+  { value: "Blueberry", label: "Blueberry", icon: Circle },
+  { value: "Grapes", label: "Grapes", icon: Circle },
+  { value: "Carrot", label: "Carrot", icon: Carrot },
 ]
 
 export function ItemsWithIconsVariant() {
@@ -266,11 +268,11 @@ export function ItemsWithIconsVariant() {
 
 // ─── 9. Items with description ────────────────────────────────────────────────
 const DESCRIBED_FRUITS = [
-  { value: "apple", label: "Apple", description: "Crisp and sweet red fruit." },
-  { value: "banana", label: "Banana", description: "Soft tropical yellow fruit." },
-  { value: "blueberry", label: "Blueberry", description: "Small antioxidant-rich berry." },
-  { value: "grapes", label: "Grapes", description: "Juicy vine-grown clusters." },
-  { value: "pineapple", label: "Pineapple", description: "Tangy tropical fruit." },
+  { value: "Apple", label: "Apple", description: "Crisp and sweet red fruit." },
+  { value: "Banana", label: "Banana", description: "Soft tropical yellow fruit." },
+  { value: "Blueberry", label: "Blueberry", description: "Small antioxidant-rich berry." },
+  { value: "Grapes", label: "Grapes", description: "Juicy vine-grown clusters." },
+  { value: "Pineapple", label: "Pineapple", description: "Tangy tropical fruit." },
 ]
 
 export function ItemsWithDescriptionVariant() {
@@ -300,11 +302,11 @@ export function ItemsWithDescriptionVariant() {
 
 // ─── 10. With avatar ──────────────────────────────────────────────────────────
 const ASSIGNEES = [
-  { value: "alice", label: "Alice Park", initials: "AP" },
-  { value: "bob", label: "Bob Kim", initials: "BK" },
-  { value: "carol", label: "Carol Lee", initials: "CL" },
-  { value: "david", label: "David Wu", initials: "DW" },
-  { value: "eve", label: "Eve Chen", initials: "EC" },
+  { value: "Alice Park", label: "Alice Park", initials: "AP" },
+  { value: "Bob Kim", label: "Bob Kim", initials: "BK" },
+  { value: "Carol Lee", label: "Carol Lee", initials: "CL" },
+  { value: "David Wu", label: "David Wu", initials: "DW" },
+  { value: "Eve Chen", label: "Eve Chen", initials: "EC" },
 ]
 
 export function WithAvatarVariant() {
@@ -335,26 +337,26 @@ export function WithAvatarVariant() {
 
 // ─── 11. Scrollable ───────────────────────────────────────────────────────────
 const TIMEZONES = [
-  { value: "utc-12", label: "UTC−12:00 Baker Island" },
-  { value: "utc-11", label: "UTC−11:00 American Samoa" },
-  { value: "utc-10", label: "UTC−10:00 Hawaii" },
-  { value: "utc-9", label: "UTC−09:00 Alaska" },
-  { value: "utc-8", label: "UTC−08:00 Pacific Time" },
-  { value: "utc-7", label: "UTC−07:00 Mountain Time" },
-  { value: "utc-6", label: "UTC−06:00 Central Time" },
-  { value: "utc-5", label: "UTC−05:00 Eastern Time" },
-  { value: "utc-4", label: "UTC−04:00 Atlantic Time" },
-  { value: "utc-3", label: "UTC−03:00 Buenos Aires" },
-  { value: "utc-2", label: "UTC−02:00 Mid-Atlantic" },
-  { value: "utc-1", label: "UTC−01:00 Azores" },
-  { value: "utc+0", label: "UTC+00:00 London" },
-  { value: "utc+1", label: "UTC+01:00 Berlin" },
-  { value: "utc+2", label: "UTC+02:00 Cairo" },
-  { value: "utc+3", label: "UTC+03:00 Moscow" },
-  { value: "utc+4", label: "UTC+04:00 Dubai" },
-  { value: "utc+5", label: "UTC+05:00 Karachi" },
-  { value: "utc+5.5", label: "UTC+05:30 Mumbai" },
-  { value: "utc+6", label: "UTC+06:00 Dhaka" },
+  { value: "UTC−12:00 Baker Island", label: "UTC−12:00 Baker Island" },
+  { value: "UTC−11:00 American Samoa", label: "UTC−11:00 American Samoa" },
+  { value: "UTC−10:00 Hawaii", label: "UTC−10:00 Hawaii" },
+  { value: "UTC−09:00 Alaska", label: "UTC−09:00 Alaska" },
+  { value: "UTC−08:00 Pacific Time", label: "UTC−08:00 Pacific Time" },
+  { value: "UTC−07:00 Mountain Time", label: "UTC−07:00 Mountain Time" },
+  { value: "UTC−06:00 Central Time", label: "UTC−06:00 Central Time" },
+  { value: "UTC−05:00 Eastern Time", label: "UTC−05:00 Eastern Time" },
+  { value: "UTC−04:00 Atlantic Time", label: "UTC−04:00 Atlantic Time" },
+  { value: "UTC−03:00 Buenos Aires", label: "UTC−03:00 Buenos Aires" },
+  { value: "UTC−02:00 Mid-Atlantic", label: "UTC−02:00 Mid-Atlantic" },
+  { value: "UTC−01:00 Azores", label: "UTC−01:00 Azores" },
+  { value: "UTC+00:00 London", label: "UTC+00:00 London" },
+  { value: "UTC+01:00 Berlin", label: "UTC+01:00 Berlin" },
+  { value: "UTC+02:00 Cairo", label: "UTC+02:00 Cairo" },
+  { value: "UTC+03:00 Moscow", label: "UTC+03:00 Moscow" },
+  { value: "UTC+04:00 Dubai", label: "UTC+04:00 Dubai" },
+  { value: "UTC+05:00 Karachi", label: "UTC+05:00 Karachi" },
+  { value: "UTC+05:30 Mumbai", label: "UTC+05:30 Mumbai" },
+  { value: "UTC+06:00 Dhaka", label: "UTC+06:00 Dhaka" },
 ]
 
 export function ScrollableVariant() {
