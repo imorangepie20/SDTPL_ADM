@@ -19,7 +19,7 @@ export const COMPONENTS: ComponentEntry[] = [
   { name: "Accordion",        variants: 12, category: "Base",         icon: "ChevronDown",            href: "/components/accordion" },
   { name: "Alert",            variants: 15, category: "Feedback",     icon: "TriangleAlert",        href: "/components/alert" },
   { name: "Alert Dialog",     variants: 16, category: "Feedback",     icon: "MessageSquareWarning", href: "/components/alert-dialog" },
-  { name: "Autocomplete",     variants:  5, category: "Form",         icon: "TextCursorInput" },
+  { name: "Autocomplete",     variants:  5, category: "Form",         icon: "TextCursorInput",    href: "/components/autocomplete" },
   { name: "Avatar",           variants: 21, category: "Data Display", icon: "CircleUser",         livePreview: true },
   { name: "Badge",            variants: 12, category: "Data Display", icon: "Tag",                livePreview: true },
   { name: "Breadcrumb",       variants:  6, category: "Navigation",   icon: "ChevronRight" },
