@@ -46,8 +46,9 @@ test.describe("Components — Calendar detail", () => {
       footerCard.getByText("Pick a day", { exact: true })
     ).toBeVisible();
 
-    // Click on day 20 within the footer variant
-    const dayBtn = footerCard.getByRole("button", { name: /^20$/ }).first();
+    // Click on day 20 within the footer variant (match by visible text, since
+    // react-day-picker's accessible name is the full date string)
+    const dayBtn = footerCard.getByRole("button").filter({ hasText: /^20$/ }).first();
     await dayBtn.click();
 
     // Footer should no longer say "Pick a day"
@@ -63,7 +64,9 @@ test.describe("Components — Calendar detail", () => {
 
   test("catalog Calendar card links to the detail page", async ({ page }) => {
     await page.goto("/components");
-    await page.getByRole("link", { name: /Calendar/ }).first().click();
+    // Scope to the catalog card's href — "Calendar" also appears as a sidebar
+    // app nav link (→ /apps/calendar), which must not be matched here.
+    await page.locator('a[href="/components/calendar"]').first().click();
     await expect(page).toHaveURL(/\/components\/calendar$/);
   });
 });
