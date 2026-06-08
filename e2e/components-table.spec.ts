@@ -6,7 +6,7 @@ test.describe("Components — Table detail", () => {
     page.on("pageerror", (e) => errors.push(e.message));
     const res = await page.goto("/components/table");
     expect(res?.status(), "status").toBeLessThan(400);
-    await expect(page.getByRole("heading", { name: "Table" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Table", exact: true })).toBeVisible();
     // Variant section titles
     await expect(page.getByText("Basic", { exact: true }).first()).toBeVisible();
     await expect(page.getByText("With footer (totals)", { exact: true }).first()).toBeVisible();
@@ -41,6 +41,6 @@ test.describe("Components — Table detail", () => {
     await page.goto("/components");
     await page.locator('a[href="/components/table"]').first().click();
     await expect(page).toHaveURL(/\/components\/table$/);
-    await expect(page.getByRole("heading", { name: "Table" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Table", exact: true })).toBeVisible();
   });
 });
